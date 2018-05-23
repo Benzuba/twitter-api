@@ -27,7 +27,7 @@ client.get('account/verify_credentials',{skip_status: true}, function(error, dat
   user.name = data.screen_name;
   user.image = data.profile_image_url;
   user.background_image = data.profile_background_image_url;
-  console.log(data);
+  user.friend_count = data.friends_count;
 });
 
 

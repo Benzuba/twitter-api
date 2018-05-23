@@ -32,16 +32,16 @@ html(lang='en')
               ul.circle--inline
                 li
                   a Sign Out
-    .app--tweet
-      form
-        .circle--fluid
-          .circle--fluid--cell.circle--fluid--primary.align-bottom.app--tweet--post
-            .app--avatar(style='background-image: url('+user.image+')')
-              img(src='images/m-spore.png')
-            textarea#tweet-textarea.circle--textarea--input(placeholder="What's happening?")
-            strong#tweet-char.app--tweet--char 140
-          .circle--fluid--cell.align-bottom
-            button.button-primary Tweet
+    //- .app--tweet
+    //-   form
+    //-     .circle--fluid
+    //-       .circle--fluid--cell.circle--fluid--primary.align-bottom.app--tweet--post
+    //-         .app--avatar(style='background-image: url('+user.image+')')
+    //-           img(src='images/m-spore.png')
+    //-         textarea#tweet-textarea.circle--textarea--input(placeholder="What's happening?")
+    //-         strong#tweet-char.app--tweet--char 140
+    //-       .circle--fluid--cell.align-bottom
+    //-         button.button-primary Tweet
     .bounds.app--body
       .app--section--header
         .grid-33
@@ -49,7 +49,7 @@ html(lang='en')
             h2 Timeline
         .grid-33
           .app--section--heading
-            strong 129
+            strong= user.friend_count
             h2 Following
         .grid-33
           .app--section--heading
